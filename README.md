@@ -1,12 +1,48 @@
-# React + Vite
+# Trivia Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Trivia Quiz App is a React-based web application that allows users to register, select quiz topics, answer timed trivia questions, and view their results in a neon-themed UI.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Use [npm](https://www.npmjs.com/) to install and run Trivia Quiz App.
 
-## Expanding the ESLint configuration
+First, clone the repository:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/yourusername/trivia-quiz-app.git
+```
+Then navigate to the project directory:
+```bash
+cd trivia-quiz-app
+```
+Install the dependencies:
+```bash
+npm install
+```
+Start the development server:
+```bash
+npm run dev
+```
+The app will be available at http://localhost:5173.
+
+## Usage
+Once the app is running:
+- Register by entering your username.
+- Navigate using the neon NavBar to view available quizzes or read about the app.
+- Select a topic from the Quiz List page.
+- Answer questions within the timer limit.
+- View your results, review wrong answers, and restart quizzes to improve your score.
+
+## Technologies
+React – Frontend library
+Vite – Build tool for fast React development
+React Router – Routing between pages
+CSS Neon Theme – Custom designed for glowing cyberpunk aesthetics
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please ensure your changes follow the existing code style and include any relevant component or style updates.
+
+## License
+MIT
