@@ -1,6 +1,8 @@
 // Fetches questions from the Open Trivia DB API and maps them to the app's format
 export async function fetchApiQuestions() {
-    const response = await fetch('https://opentdb.com/api.php?amount=10&type=multiple');
+    const TRIVIA_API_URL = process.env.REACT_APP_TRIVIA_API_URL;
+
+    const response = await fetch(TRIVIA_API_URL);
     const data = await response.json();
     return data.results.map(q => ({
         text: q.question,
