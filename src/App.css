@@ -1,0 +1,84 @@
+:root {
+  --bg-dark: #14001f; /* dark background for contrast */
+  --text-light: #f0f0f0; /* bright text color without glow */
+  --neon-purple: #b380ff; /* lighter, brighter purple */
+  --neon-green: #43e97b;
+  --neon-pink: #ff61c5;
+  --neon-blue: #00eaff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.neon-card {
+  background: rgba(25, 0, 51, 0.85);
+  border: 3px solid var(--neon-purple);
+  border-radius: 15px;
+  box-shadow: 0 0 20px var(--neon-purple), 0 0 30px var(--neon-blue);
+  padding: 30px;
+}
+
+.neon-input {
+  border: 2px solid var(--neon-purple);
+  background: rgba(38, 0, 77, 0.85);
+  color: var(--text-light);
+  padding: 12px 20px;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.neon-input:focus {
+  box-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-blue);
+}
+
+.quiz-btn, .start-btn, .api-btn {
+  background: transparent;
+  border: 2px solid var(--neon-green);
+  color: var(--neon-green);
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-btn:hover, .start-btn:hover, .api-btn:hover {
+  box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green);
+}
+
+.navbar .nav-link {
+  color: var(--neon-pink);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.neon-flicker {
+  /* removed text glow, only border and accent glow remain */
+  animation: flicker 2s infinite alternate;
+}
+
+/* Optional flicker animation */
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.9;
+  }
+}
